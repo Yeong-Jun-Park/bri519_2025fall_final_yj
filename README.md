@@ -17,12 +17,28 @@ The entire pipeline is executed through a single entry point (`main.py`).
 
 ---
 
-## Installation
+## Local approach
+
+### Installation
 - Python 3.9 or later
 - Required Python packages:
   - numpy
   - scipy
   - matplotlib
 
-## usage examples
+### usage examples
 python main.py
+
+## Docker approach
+
+### Docker image
+https://hub.docker.com/r/yjpark2021/bri519_lfp
+
+### Pull the Docker Image
+docker pull yjpark2021/bri519_lfp:latest
+
+### usage examples
+docker run --rm \
+  -v "$(pwd)/results:/app/results" \
+  yjpark2021/bri519_lfp:latest
+
