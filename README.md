@@ -38,7 +38,5 @@ https://hub.docker.com/r/yjpark2021/bri519_lfp
 docker pull yjpark2021/bri519_lfp:latest
 
 ### usage examples
-docker run --rm \
-  -v "$(pwd)/results:/app/results" \
-  yjpark2021/bri519_lfp:latest
+docker run --rm -v "$(pwd)/results:/app/results" yjpark2021/bri519_lfp:latest
 
